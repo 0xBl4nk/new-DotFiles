@@ -19,13 +19,7 @@
 
 ---
 
-## Post Install:
-
-* Install fonts:
-```bash
-cp -r fonts ~/.local/share/
-fc-cache -f -v
-```
+## Post Install
 
 * Set Wallpaper
 ```bash
@@ -34,7 +28,21 @@ cp wallpaper.jpg ~/Pictures
 cp .fehbg ~/
 ```
 
-## Install Discord Emoji/Fonts:
+* My Neovim config
+```bash
+git clone https://github.com/arthurhdyr/nvim-config.git
+mv nvim-config ~/.config/nvim
+```
+
+### Fonts
+
+* Install fonts:
+```bash
+cp -r fonts ~/.local/share/
+fc-cache -f -v
+```
+
+#### Install Discord Emoji/Fonts:
 
 * Gentoo
 ```bash
