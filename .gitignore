@@ -1,0 +1,9 @@
+.config/discord
+.config/pulse
+.config/systemd
+.config/dconf
+.config/flameshot
+.config/QtProject.conf
+
+.config/nvim
+
