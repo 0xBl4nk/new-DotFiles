@@ -10,8 +10,8 @@
                 Wallpaper: Feh
                Compositor: Picom 
               Run_Program: Dmenu
-              Web_Browser: Brave/Firefox
-              Text_editor: Neovim
+              Web_Browser: Brave/qutebrowser
+              Text_editor: Neovim (github.com/arthurhydr/nvim-config)
              File-listing: Exa
             Root_commands: Doas
 
