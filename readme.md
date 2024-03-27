@@ -54,3 +54,13 @@ emerge noto noto-emoji noto-cjk
 pacman -S noto-fonts
 pacman -S noto-fonts-emoji
 ```
+
+### I3 - bar
+* i3status
+```bash
+cp -r .config/i3status ~/.config
+```
+* polybar
+```bash
+cp -r .config/polybar ~/.config
+```
