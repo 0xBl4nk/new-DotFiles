@@ -4,6 +4,18 @@
 .config/dconf
 .config/flameshot
 .config/QtProject.conf
+.config/chromium
+.config/Code - OSS
+.config/copyq
+.config/ngrok
+.config/obsidian
+.config/obs-studio
+.config/OpenRGB
+.config/unity3d
+.config/pavucontrol
+.config/qutebrowser
+.config/pavucontrol.ini
+.config/Electron
 
 .config/nvim
 
