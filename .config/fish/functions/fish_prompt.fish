@@ -1,23 +1,20 @@
-function fish_prompt --description 'Write out the prompt'
-    set -l last_status $status
+function fish_prompt
+    # Set the color and print the current working directory
+    set_color cyan
+    printf '%s' (prompt_pwd)
 
-    prompt_login
-
-    echo -n ':'
-
-    # PWD
-    set_color $fish_color_cwd
-    echo -n (prompt_pwd)
-    set_color normal
-
-    __terlar_git_prompt
-    fish_hg_prompt
-    echo
-
-    if not test $last_status -eq 0
-        set_color $fish_color_error
+    # Check for Git directory and show Git branch
+    if type -q git
+        set -l git_branch (git branch --show-current 2>/dev/null)
+        if test -n "$git_branch"
+            set_color purple
+            printf " [%s]" $git_branch
+            set_color normal
+        end
     end
-
-    echo -n '➤ '
-    set_color normal
+    
+    # Final arrow
+    echo -n " ➤ "
+    echo ''
 end
+
