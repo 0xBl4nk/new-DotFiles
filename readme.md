@@ -3,16 +3,16 @@
 ## Main System
 ```
 
-                       Wm: i3-wm, polybar
+                       Wm: i3-wm, polybar OR Hyprland
                        Sh: Fish
-                    Audio: Pulseaudio, Pavucontrol
-                 Terminal: Alacritty
+                    Audio: Pipewire, Pavucontrol
+                 Terminal: Kitty
                 Wallpaper: Feh
                Compositor: Picom 
               Run_Program: Dmenu
-              Web_Browser: Brave/qutebrowser
+              Web_Browser: firefox/qutebrowser
               Text_editor: Neovim (github.com/arthurhydr/nvim-config)
-             File-listing: Exa
+             File-listing: Eza
             Root_commands: Doas
 
 ```
