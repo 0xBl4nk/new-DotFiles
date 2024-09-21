@@ -3,14 +3,14 @@
 ## Main System
 ```
 
-                       Wm: i3-wm, polybar OR Hyprland
+                       Wm: i3-wm, bumblebee-status
                        Sh: Fish
                     Audio: Pipewire, Pavucontrol
                  Terminal: Kitty
                 Wallpaper: Feh
                Compositor: Picom 
               Run_Program: Dmenu
-              Web_Browser: firefox/qutebrowser
+              Web_Browser: zen-browser/qutebrowser
               Text_editor: Neovim (github.com/arthurhydr/nvim-config)
              File-listing: Eza
             Root_commands: Doas
@@ -53,14 +53,7 @@ emerge noto noto-emoji noto-cjk
 ```bash
 pacman -S noto-fonts
 pacman -S noto-fonts-emoji
-```
 
-### I3 - bar
-* i3status
-```bash
-cp -r .config/i3status ~/.config
-```
-* polybar
-```bash
-cp -r .config/polybar ~/.config
+# for bumblebee-status:
+sudo pacman -S ttf-nerd-fonts-symbols
 ```
