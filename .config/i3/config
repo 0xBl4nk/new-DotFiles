@@ -79,15 +79,15 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # -------- workspaces --------
 # Workspaces
 set $ws1 "1󰣇"
-set $ws2 "2󰙯"
-set $ws3 "3󰈹"
+set $ws2 "2󰈹"
+set $ws3 "3󰙯"
 set $ws4 "4:"
 set $ws5 "5:"
 set $ws6 "6:"
 set $ws7 "7:"
 set $ws8 "8:"
-set $ws9 "9:"
-set $ws10 "10:"
+set $ws9 "9"
+set $ws10 "10"
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -115,6 +115,9 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bar {
     font pango:Nerd Font 12
     position bottom
+    colors {
+      focused_workspace #4F4F4F #4F4F4F #FFFFFF #FFFFFF 
+      }
     tray_output none
     strip_workspace_numbers yes
     status_command /usr/bin/bumblebee-status -m nic \
