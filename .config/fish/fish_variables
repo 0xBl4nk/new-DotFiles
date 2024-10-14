@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export --path PATH:/home/blank/\x2elocal/share/nvim/mason/bin\x1e/sbin\x1e/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/sbin\x1e/usr/bin\x1e/usr/lib/jvm/default/bin\x1e/opt/rocm\x2d6\x2e2\x2e0/bin\x1e/opt/rocm\x2d6\x2e2\x2e0/hip/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/blank/home/blank/go/bin
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:777777
 SETUVAR fish_color_cancel:\x2d\x2dreverse
@@ -31,3 +32,4 @@ SETUVAR fish_pager_color_description:B3A06D
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_user_paths:/home/blank/go/bin

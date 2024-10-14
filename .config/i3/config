@@ -13,8 +13,9 @@ exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-center $HOME/Pictures/wallpaper.jpg
 exec --no-startup-id picom --config $HOME/.config/picom/picom.conf
 # -------Rules--------
-assign [class="discord"] $ws3
-assign [class="Pavucontrol"] $ws5
+assign [class="vesktop"] $ws3
+assign [class="Pavucontrol"] $ws10
+assign [class="zen-alpha"] $ws2
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -30,7 +31,7 @@ floating_modifier $mod
 # Print
 bindsym Print exec flameshot gui
 # start a terminal
-bindsym $mod+q exec kitty 
+bindsym $mod+q exec alacritty 
 # kill focused window
 bindsym $mod+c kill
 # start (a program launcher)

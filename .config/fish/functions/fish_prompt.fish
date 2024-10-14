@@ -17,4 +17,3 @@ function fish_prompt
     echo -n " ➤ "
     echo ''
 end
-
