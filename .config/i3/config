@@ -1,6 +1,6 @@
 set $mod Mod4
 
-for_window [class="^.*"] border pixel 1 
+for_window [class="^.*"] border pixel 0 
 gaps inner 7
 gaps outer 7
 client.focused #555555 #555555 #ffffff #8000ff #8000ff
@@ -12,6 +12,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-center $HOME/Pictures/wallpaper.jpg
 exec --no-startup-id picom --config $HOME/.config/picom/picom.conf
+exec --no-startup-id flameshot --autostart
 # -------Rules--------
 assign [class="vesktop"] $ws3
 assign [class="Pavucontrol"] $ws10
@@ -29,9 +30,9 @@ floating_modifier $mod
 
 # ------- Bind -------
 # Print
-bindsym Print exec flameshot gui
+bindsym Print exec flameshot && flameshot gui
 # start a terminal
-bindsym $mod+q exec alacritty 
+bindsym $mod+q exec kitty 
 # kill focused window
 bindsym $mod+c kill
 # start (a program launcher)
